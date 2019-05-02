@@ -39,21 +39,6 @@ public class ComputeDeltaApp {
         }
     }   
         
-        public boolean isPrefix (String s1, String s2){
-            boolean res = true;
-            char [] S1 = s1.toCharArray();
-            char [] S2 = s2.toCharArray();
-            for (int i = 0; i < S1.length; i++) {
-                System.out.println("s1 " + S1[i] + " s2 " + S2[i]);
-                
-                if (S1[i] != S2[i]) {
-                    
-                    res = false;
-                    break;
-                }
-            }
-            return res;
-        }     
 
     public int[][] computeDelta() {
         prefix_function(); // таблица префиксов
